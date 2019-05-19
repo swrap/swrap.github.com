@@ -1,0 +1,27 @@
+var width = window.innerWidth;
+var height = window.innerHeight;
+
+var max_margin_left = 40;
+var min_margin_left = 20;
+var max_margin_top = 85;
+var min_margin_top = 65;
+
+$(window).resize(function() {
+	var width = window.innerWidth;
+	var height = window.innerHeight;
+})
+
+$(document).mousemove(function(e) {
+	var new_margin_left = map(e.pageX, 0, width, min_margin_left, max_margin_left)
+	var new_margin_top = map(e.pageY, 0, height, min_margin_top, max_margin_top)
+	$('.pupil').each(function() {
+		$(this).css({
+			'margin-left': new_margin_left,
+			'margin-top': new_margin_top,
+		})
+	})
+})
+
+function map(n, start1, stop1, start2, stop2) {
+	return ((n-start1)/(stop1-start1))*(stop2-start2)+start2;
+}
