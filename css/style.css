@@ -5,6 +5,15 @@ html, body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.thank_to_matt {
+    position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+	color: white;
+	font-size: 10px;
+}
+
 .master_container {
   height: 100%;
   width: 100%;

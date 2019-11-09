@@ -5,8 +5,13 @@ html, body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-div {
-	//outline: solid 1px;
+.thank_to_matt {
+    position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+	color: white;
+	font-size: 10px;
 }
 
 .master_container {
@@ -172,13 +177,4 @@ div {
 .bottom_container {
 	height: 200%;
 	width: 100%;
-}
-
-.thanks_to_matt {
-    position: absolute;
-	bottom: 0;
-	text-align: center;
-	width: 100%;
-	color: white;
-	font-size: 25px;
 }
